@@ -21,6 +21,7 @@ services:
     container_name: laravel_app
     volumes:
       - ./backend:/var/www/html
+      - ./backend/apache-config.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
       - DB_HOST=mysql
