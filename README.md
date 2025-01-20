@@ -26,6 +26,10 @@ cd yourrepository
 Docker Compose を使用して、プロジェクトを起動します:
 
 docker-compose up -d
+docker ps
+
+docker exec -it <backend container id> bash
+php artisan migrate
 
 アクセス方法
 
