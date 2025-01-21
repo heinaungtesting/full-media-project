@@ -18,14 +18,16 @@ Vue.js + Laravel Docker プロジェクト
 
 プロジェクトをローカル環境にクローンします:
 
-git clone https://github.com/heinaungtesting/full-media-project.git
-cd yourrepository
-
+    git clone https://github.com/heinaungtesting/full-media-project.git
+    cd yourrepository
+    
 2. Docker起動前にやること
-     cd backend
-     composer install
+      cd backend
+   
+      composer install
+     
 
-3. Docker コンテナの起動
+３. Docker コンテナの起動
 
 Docker Compose を使用して、プロジェクトを起動します:
 
