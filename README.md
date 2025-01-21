@@ -36,7 +36,7 @@ Docker Compose を使用して、プロジェクトを起動します:
 
     docker exec -it <backend container id> bash
     php artisan migrate
-    php artisan key:generate
+    
 
 
 アクセス方法
