@@ -21,15 +21,21 @@ Vue.js + Laravel Docker プロジェクト
 git clone https://github.com/heinaungtesting/full-media-project.git
 cd yourrepository
 
-2. Docker コンテナの起動
+２。docker起動前にやること
+cd backend
+composer install
+
+3. Docker コンテナの起動
 
 Docker Compose を使用して、プロジェクトを起動します:
 
-docker-compose up -d
+docker-compose up -d --build
 docker ps
 
 docker exec -it <backend container id> bash
 php artisan migrate
+php artisan key:generate
+
 
 アクセス方法
 
